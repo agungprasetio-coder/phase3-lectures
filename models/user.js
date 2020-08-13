@@ -1,5 +1,5 @@
-const { getDatabase } = require("../config/config.js")
-const User = getDatabase().collection("users")
+const db = require("../config/config.js")
+const User = db.collection("users")
 const { ObjectId } = require("mongodb")
 
 class UserModel {
